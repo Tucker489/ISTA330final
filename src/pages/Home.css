@@ -1,0 +1,41 @@
+.home-container {
+    min-height: 100vh;
+    padding: 40px;
+    background: #fefae0;
+    font-family: 'Courier New', monospace;
+  }
+  
+  .character-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .character-card {
+    background-color: #fffdf5;
+    border: 3px solid #8B5A2B;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 4px 4px #ccc;
+    text-align: center;
+  }
+  
+  .character-card h2 {
+    margin-bottom: 10px;
+    color: #4e342e;
+  }
+  
+  .progress-bar {
+    background-color: #ddd;
+    border-radius: 8px;
+    height: 20px;
+    margin: 10px 0;
+  }
+  
+  .progress {
+    background-color: #6B8E23;
+    height: 100%;
+    border-radius: 8px;
+  }
+  
