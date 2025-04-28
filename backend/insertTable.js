@@ -14,7 +14,7 @@ const client = new Client({
 client.connect(function (err) {
 	if (err)
 		throw err;
-	client.query("CREATE TABLE test ( name varchar(20), PRIMARY KEY (name) )", [], function (err, result) {
+	client.query("INSERT INTO test VALUES ('Hello World!')", [], function (err, result) {
 		if (err)
 			throw err;
 		console.log(result);

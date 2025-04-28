@@ -14,10 +14,14 @@ const client = new Client({
 client.connect(function (err) {
 	if (err)
 		throw err;
-	client.query("CREATE TABLE test ( name varchar(20), PRIMARY KEY (name) )", [], function (err, result) {
+	client.query("SELECT * FROM test", [], function (err, result) {
 		if (err)
 			throw err;
-		console.log(result);
+		let results = result.rows;
+		console.log(result.rows);
+		for (var i = 0, item; item = results[i]; i++) {
+			console.log(item);
+		}
 		client.end(function (err) {
 			if (err)
 				throw err;
